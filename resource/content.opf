@@ -1,0 +1,25 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:creator opf:role="aut" opf:file-as="Unknown">Unknown</dc:creator>
+<meta name="calibre:timestamp" content="2014-11-02T13:55:30.013340+00:00"/>
+    <dc:contributor opf:role="bkp">ToEPUB.com</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">5e70792b-599b-4dc8-ba5c-f414915a2d38</dc:identifier>
+  <dc:title>0Python教程</dc:title>
+<meta name="calibre:title_sort" content="0Python教程"/>
+<meta name="calibre:user_categories" content="{}"/>
+<meta name="calibre:author_link_map" content="{}"/>
+<dc:language>en</dc:language>
+<dc:identifier opf:scheme="calibre">5e70792b-599b-4dc8-ba5c-f414915a2d38</dc:identifier>
+</metadata>
+  <manifest>
+    <item href="index.html" id="id1" media-type="application/xhtml+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="id1"/>
+  </spine>
+  <guide/>
+</package>
