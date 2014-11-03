@@ -6,7 +6,7 @@ def zip_dir(dirname,zipfilename):
     filelist = []
     if os.path.isfile(dirname):
         filelist.append(dirname)
-    else :
+    else:
         for root, dirs, files in os.walk(dirname):
             for name in files:
                 filelist.append(os.path.join(root, name))

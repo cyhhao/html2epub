@@ -20,13 +20,12 @@ class html2epub:
 
             name = each.decode('utf-8')
 
-
             FilePath = self.path + name
             file0 = open(r'resource/content.opf', 'r')
             change = file0.read()
             file0.close()
 
-            OnlyName=name.replace('.html', '')
+            OnlyName = name.replace('.html', '')
             change = change.replace('<dc:title>', '<dc:title>' + OnlyName)
             change = change.replace('content="', 'content="' + OnlyName)
             file0 = open(r'temp/content.opf', 'w')
@@ -40,7 +39,7 @@ class html2epub:
             rep = [index]
             Parser = htmlcl.get_img(html=rep, path=r'temp/')
             Parser.feed(index)
-            print rep[0]
+            # print rep[0]
 
             file1 = open(r'temp/index.html', 'w')
             file1.write(rep[0])
@@ -49,9 +48,7 @@ class html2epub:
             zipFile.zip_dir(r'temp', self.toPath + OnlyName + '.epub')
 
             shutil.rmtree('temp')
-
-            break
-
+    print '所有已完成'
 
     def Path2Std(self, Path):
 
@@ -63,5 +60,5 @@ class html2epub:
         else:
             Path += '/'
 
-        print Path
+        # print Path
         return Path
