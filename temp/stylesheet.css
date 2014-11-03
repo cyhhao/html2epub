@@ -1,0 +1,106 @@
+.calibre {
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    padding: 0;
+    margin: 0
+    }
+.calibre2 {
+    display: list-item;
+    padding: 0;
+    margin: 0
+    }
+.calibre3 {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    padding: 0;
+    margin: 0
+    }
+.calibre4 {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0.1665in 0 0.1965in
+    }
+.calibre5 {
+    line-height: 1.2;
+    padding: 0;
+    margin: 0
+    }
+.G-fr {
+    display: inline;
+    font-size: 1em;
+    height: 2in;
+    position: static;
+    width: 3.3335in;
+    padding: 0;
+    margin: 0 auto
+    }
+.G-fr1 {
+    display: inline;
+    font-size: 1em;
+    height: 0.3929in;
+    position: static;
+    width: 0.7862in;
+    padding: 0;
+    margin: 0 auto
+    }
+.L {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
+.P-Horizontal20Line {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 0.41667em;
+    padding: 0;
+    border-top: currentColor none medium;
+    border-right: currentColor none medium;
+    border-bottom: #808080 double 0.06pt;
+    border-left: currentColor none medium;
+    margin: 0 0 0.1965in
+    }
+.P-P {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0.1665in 0 0.1965in
+    }
+.P-P1 {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0
+    }
+.P-Text20body {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0 0 0.1965in
+    }
+.P-Text20body1 {
+    display: block;
+    font-family: "Liberation Serif", serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0.1965in
+    }
