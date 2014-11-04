@@ -1,7 +1,8 @@
 import os
 import zipfile
 
-
+# 从oschina上抄的。
+# 写的很好：http://www.oschina.net/code/snippet_89296_9122
 def zip_dir(dirname,zipfilename):
     filelist = []
     if os.path.isfile(dirname):
