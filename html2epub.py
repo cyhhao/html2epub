@@ -1,3 +1,4 @@
+# coding:utf8
 import os
 import shutil
 import htmlcl
@@ -17,6 +18,8 @@ class html2epub:
         # print all_file
         for each in all_file:
             print each
+            if not each.endswith('.html'):
+                continue
             # 新建一个temp文件夹用来组织zip包里的内容
             shutil.copytree('resource', 'temp')
 
@@ -58,9 +61,10 @@ class html2epub:
 
             # 删除临时的文件夹
             shutil.rmtree('temp')
+            print '所有已完成'
 
 
-    print '所有已完成'
+
 
     def Path2Std(self, Path):
 

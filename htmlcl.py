@@ -1,3 +1,4 @@
+# coding:utf8
 import HTMLParser
 import hashlib
 import urllib
