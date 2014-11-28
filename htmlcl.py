@@ -41,6 +41,3 @@ class get_img(HTMLParser.HTMLParser):
 
                     # 替换HTML中的图片路径为本地图片路径
                     self.html[0] = self.html[0].replace(value, new_url)
-
-
-
