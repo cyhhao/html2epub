@@ -48,6 +48,7 @@ class html2epub:
             # 写一个解析类，负责下载html中的图片，并放入特定的路径下，并修改HTML文件中的图片路径
             rep = [index]
             Parser = htmlcl.get_img(html=rep, path=r'temp/')
+            # print index
             Parser.feed(index)
             # print rep[0]
 
