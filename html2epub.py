@@ -21,7 +21,13 @@ class html2epub:
             if not each.endswith('.html'):
                 continue
             # 新建一个temp文件夹用来组织zip包里的内容
+            # 如果已经存在则删除temp文件夹
+            if os.path.exists('temp'):
+                shutil.rmtree('temp')
+            # 复制粘贴
             shutil.copytree('resource', 'temp')
+            # 创建存放图片的目录
+            os.makedirs('temp/oebps/image')
 
             # 组合文件名
             name = each.decode('utf-8')
