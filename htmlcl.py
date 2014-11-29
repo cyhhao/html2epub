@@ -25,7 +25,7 @@ class get_img(HTMLParser.HTMLParser):
                     new_url = "oebps/image/" + hash + '.png'
 
                     # 下载图片并保存
-                    #print value
+                    # print value
                     # opener=urllib2.build_opener()
                     # req=urllib2.Request(value)
                     # req.add_header("User-Agent","Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36")
@@ -34,7 +34,16 @@ class get_img(HTMLParser.HTMLParser):
                     # f = open(self.path + new_url,'wb')
                     # f.write(res.read())
                     try:
-                        urllib.urlretrieve(value, self.path + new_url)
+                        i_headers = {
+                            "User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1) Gecko/20090624 Firefox/3.5",
+                            "Accept": "text/plain"}
+
+                        req = urllib2.Request(value, headers=i_headers)
+                        res = urllib2.urlopen(req)
+                        f = open(self.path + new_url, "wb")
+                        f.write(res.read())
+
+                        # urllib.urlretrieve(value, self.path + new_url)
                     except Exception:
                         print Exception
                     print key, value, hash
